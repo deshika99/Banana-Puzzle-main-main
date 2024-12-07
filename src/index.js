@@ -56,6 +56,9 @@ const Root = () => {
         <Route path="/howtoplay" element={<HowToPlay />} />
         <Route path="/leaderboard" element={<Leaderboard />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/how-to-play" element={<HowToPlay />} />
+        <Route path="/leaderboard" element={<Leaderboard />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </Router>
   );
