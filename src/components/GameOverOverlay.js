@@ -15,7 +15,7 @@ const GameOver = ({ score }) => {
           <Link to="/start-play">
             <button className="game-over-button retry">Retry</button>
           </Link>
-          <Link to="/">
+          <Link to="/home">
             <button className="game-over-button home">Back to Home</button>
           </Link>
         </div>
