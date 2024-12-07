@@ -1,0 +1,173 @@
+/* General Container */
+.home-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif; /* Clean and modern font */
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Darken the background slightly for contrast */
+  background-image: url("../Images/bg\ banana.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(70%); /* Reduce brightness for better visibility of text */
+}
+
+.content-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff; /* Light text color */
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.8); /* Light transparent background for the card */
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Soft shadow for card */
+  backdrop-filter: blur(12px); /* Background blur effect */
+}
+
+.game-info {
+  margin-bottom: 30px;
+}
+
+.game-logo {
+  width: 180px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Subtle shadow for logo */
+}
+
+.game-name {
+  font-size: 50px;
+  margin-top: 20px;
+  color: #000000; /* Yellow-Green (GreenYellow) */
+  font-family: 'Parkinsans'; /* Smooth, rounded font for the game name */
+  font-weight: 700;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.welcome-note {
+  font-size: 26px;
+  margin-top: 15px;
+  color: rgb(116, 17, 158);
+  font-weight: bold;
+  font-family: 'parkinsans';
+  animation: move 2.5s linear infinite; /* Smooth animation */
+  
+}
+
+.username {
+  color: rgb(116, 17, 158);
+  font-style: italic;
+}
+
+/* Navigation Links and Buttons */
+.navigation {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.nav-link,
+.nav-button {
+  display: inline-block;
+  width: 240px;
+  padding: 18px;
+  margin: 12px;
+  background-color:rgb(100, 42, 90);
+  color: #ffffff; 
+  font-weight: 600;
+  border: rgb(100, 42, 90);
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Soft shadow for buttons */
+}
+
+/* Highlight the Start Play button */
+.nav-link.highlight {
+  background-color: rgb(116, 17, 158);
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+.nav-link:hover,
+.nav-button:hover {
+  background-color:rgb(116, 17, 158);
+  color: white;
+  transform: translateY(-5px); /* Hover effect */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4); /* Bigger shadow on hover */
+}
+
+/* Button padding and spacing adjustments */
+.nav-button {
+  padding: 18px 36px; /* Adjust padding for larger buttons */
+  font-size: 20px;
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .game-name {
+    font-size: 32px; /* Adjust font size on smaller screens */
+  }
+
+  .game-logo {
+    width: 150px; /* Smaller logo on smaller screens */
+  }
+
+  .nav-link,
+  .nav-button {
+    width: 200px; /* Adjust button width for mobile */
+    font-size: 18px;
+  }
+
+  .welcome-note {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .game-name {
+    font-size: 28px; /* Adjust font size for very small screens */
+  }
+
+  .game-logo {
+    width: 120px; /* Smaller logo for mobile */
+  }
+
+  .nav-link,
+  .nav-button {
+    width: 160px; /* Smaller buttons on very small screens */
+    font-size: 16px;
+  }
+
+  .welcome-note {
+    font-size: 20px;
+  }
+}

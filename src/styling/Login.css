@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-image {
+  background-image: url("../Images/logo.png");
+  background-size: 100% 100%;
+  object-fit: cover; /* Ensures the background image covers the screen */
+  width: 100%;
+  height: 100vh;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.9); /* White with slight opacity */
+  padding: 80px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.login-logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+.login-title {
+  text-align: center;
+  color: rgb(100, 42, 90);
+  margin-bottom: 20px;
+  font-family:'parkinsans'
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #333;
+  font-size: 16px;
+  font-family:'parkinsans'
+}
+
+.login-input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.login-button {
+  padding: 10px;
+  border: 2px solid  rgb(100, 42, 90);
+  border-radius: 4px;
+  background-color: rgb(100, 42, 90);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family:'parkinsans'
+}
+
+.login-button:hover {
+  background-color: rgb(116, 17, 158);
+}
+
+.error-message {
+  color: greenyellow;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-text {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+  font-family:'parkinsans'
+}
+
+.login-link {
+  color: rgb(100, 42, 90);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+@keyframes bounceLogo {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}

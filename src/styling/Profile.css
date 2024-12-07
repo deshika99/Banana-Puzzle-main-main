@@ -1,0 +1,71 @@
+/* Styling for the body element */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../Images/bg\ banana.jpg"); /* Background image for the entire screen */
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif; /* Add a font for better readability */
+}
+
+/* Styling for the profile container */
+.profile-container {
+  width: 100%; /* Make the container full width */
+  max-width: 500px; /* Max width of the container */
+  height: auto; /* Auto height based on content */
+  padding: 40px; /* Increase padding for spacing */
+  border-radius: 15px;
+  text-align: left; /* Align text to the left */
+  margin: 50px auto; /* Center horizontally and add top margin */
+  background-color: rgba(214, 239, 49, 0.9); /* Banana yellow with higher opacity */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  overflow: hidden;
+  border: 2px solid #fff; /* Border for clean separation */
+}
+
+/* Styling for the title */
+.profile-container h2 {
+  font-size: 32px;
+  color: #333; /* Dark color for the title */
+  margin-bottom: 20px; /* Space between title and content */
+  text-align: center; /* Center title */
+}
+
+/* Styling for the profile text inside the container */
+.profile-text {
+  font-size: 18px; /* Set a readable font size */
+  color: #333; /* Dark text color for better contrast */
+  margin-bottom: 25px; /* Add spacing between sections */
+  line-height: 1.6; /* Increased line height for better readability */
+}
+
+/* Styling for individual profile data sections */
+.profile-content div {
+  font-size: 20px;
+  color: #444; /* Slightly lighter text for profile content */
+  margin-bottom: 15px; /* Add space between each profile detail */
+}
+
+/* Styling for the back button */
+.back-button {
+  display: inline-block;
+  margin-top: 30px; /* Space from profile details */
+  padding: 10px 20px;
+  background-color: #ff6600; /* Orange color */
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #ff4500; /* Darker orange on hover */
+}
+
+/* Styling for the profile content (flex for responsiveness) */
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Spacing between each content section */
+}

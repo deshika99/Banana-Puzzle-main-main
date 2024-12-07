@@ -1,0 +1,114 @@
+/* Home.css */
+
+.home-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  background-image: url("../Images/bg banana.jpg");
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.content-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.game-info {
+  margin-bottom: 50px;
+}
+
+.game-logo {
+  width: 150px;
+  height: auto;
+}
+
+.game-name {
+  font-size: 36px;
+  margin-top: 20px;
+  color: black;
+}
+
+.welcome-note {
+  font-size: 24px;
+  margin-top: 10px;
+  color: black;
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Hide overflow text */
+  animation: typewriter 3s steps(30) infinite; /* Loop the animation */
+}
+
+@keyframes typewriter {
+  from {
+    width: 0; /* Start with zero width */
+  }
+  to {
+    width: 100%; /* Gradually increase width to show full text */
+  }
+}
+
+.username {
+  color: greenyellow;
+}
+
+.navigation {
+  text-align: center;
+}
+
+.nav-link,
+.nav-button {
+  display: inline-block;
+  width: 200px;
+  padding: 15px;
+  margin: 10px;
+  background-color: greenyellow; /* Change button color */
+  color: black;
+  border: 2px solid greenyellow;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-button:hover {
+  background-color: #ff6347; /* Lighten button color on hover */
+}
+
+/* Special styling for Banana Time Wrap button */
+.nav-button.banana-time-wrap {
+  background-color: #c33; /* Change color for Banana Time Wrap button */
+  border-color: #c33; /* Match border color with button color */
+}
+
+.nav-button.banana-time-wrap:hover {
+  background-color: #f55; /* Lighten button color on hover */
+}
+.back-button {
+  display: inline-block;
+  padding: 15px;
+  margin: 10px;
+  background-color: #f5a623; /* Different color for back button */
+  color: black;
+  border: 2px solid #f5a623;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #f08f17; /* Darker color on hover */
+}

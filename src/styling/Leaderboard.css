@@ -1,0 +1,93 @@
+/* Background and container styling */
+.leaderboard-container {
+  background-color: rgba(214, 239, 49, 0.8); /* Banana yellow with opacity */
+  border-radius: 10px;
+  padding: 20px;
+  width: 60%;
+  margin: 50px auto;
+  position: relative;
+  text-align: center; /* Center text */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+}
+
+.leaderboard-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../Images/bg banana.jpg"); /* Corrected the path here */
+  background-size: cover;
+  background-position: center;
+  filter: brightness(60%); /* Darken background */
+  z-index: -1;
+}
+
+/* Styling for the back button */
+.back-button {
+  background-color: rgb(100, 42, 90); /* Dark purple background */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.back-button:hover {
+  background-color: rgb(85, 34, 68); /* Slightly darker on hover */
+}
+
+/* Styling for the leaderboard title */
+h2 {
+  color: rgb(100, 42, 90);
+  margin-top: 50px;
+  font-family: 'Pakinsans', sans-serif; /* Set the font-family */
+  font-size: 36px;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease; /* Fade in animation */
+}
+
+/* Styling for the leaderboard table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: rgb(100, 42, 90);
+  animation: fadeInUp 1s ease; /* Fade in animation */
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid white;
+}
+
+th {
+  background-color: greenyellow;
+  font-weight: normal;
+}
+
+/* Highlighted row styling */
+tr.highlighted {
+  background-color: rgba(213, 214, 200, 0.8); /* Highlight the logged-in user's row */
+}
+
+tr.highlighted td {
+  color: rgb(168, 173, 160);
+}
+
+/* Animation for fade-in */
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
