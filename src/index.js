@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
@@ -17,30 +17,7 @@ import HowToPlay from "./components/HowToPlay";
 import Leaderboard from "./components/Leaderboard";
 import Profile from "./components/Profile";
 
-import { auth } from "./firebase";
-
 const Root = () => {
-  const [showLoading, setShowLoading] = useState(true);
-  const [authenticated, setAuthenticated] = useState(false);
-
-  useEffect(() => {
-    // Simulate loading time for the splash screen
-    setTimeout(() => {                          
-      setShowLoading(false);
-    }, 2000); // Adjust the duration as needed
-
-    // Check authentication status
-    const unsubscribe = auth.onAuthStateChanged((user) => {
-      if (user) {
-        setAuthenticated(true);
-      } else {
-        setAuthenticated(false);
-      }
-    });
-
-    // Clean up subscription
-    return () => unsubscribe();
-  }, []);
 
   return (
     <Router>
